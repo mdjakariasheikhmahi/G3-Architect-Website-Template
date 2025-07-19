@@ -18,14 +18,23 @@ margin: 0;}
 .display-flex{
     display: flex;
 }
-.btn-primary{
-    background-color: ;
+.share-margin{
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
+
 
 
 /* ----- Colour ----- */
  .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
+}
+
+.dark3{
+    color: rgba(114, 114, 114, 1);
+}
+.bark1{
+    color: rgba(19, 19, 19, 1);
 }
 
  /* ----- NAVBAR ----- */
@@ -71,6 +80,7 @@ margin: 0;}
 
   .banner-image{
     width: 100%;
+    padding-bottom: 40px;
  }
 
  /* ----- Button ----- */
@@ -84,11 +94,43 @@ margin: 0;}
     margin-bottom: 50px;
  }
 
+/* ----- Main ----- */
+ main{
+    max-width: 1440px;
+    margin: 0 auto;
+ }
 
+/* ----- Our Features ----- */
+ .team{
+    align-items: center;
+ }
 
+ .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     gap: 24px;
+ }
 
+ .our-features{
+    margin-left:130px;
+    max-width: 537px;
+    max-height: 304px;
+ }
 
-
+ .quick-list{
+    font-size: 45px;
+    font-weight:lighter;
+ }
+ .of-our{
+    font-size: 45px;
+ }
+  .features{
+    font-size: 45px;
+    color:rgba(255, 144, 14, 1);
+  }
+  .features-description{
+    font-size: 16px;
+  }
 
 
 
@@ -109,8 +151,10 @@ margin: 0;}
  /* ----- Responsive Media Query ----- */
 @media screen and (max-width: 576px){
 
-    .navbar, .nav-links{
+    .navbar, .nav-links, .team{
      flex-direction: column;  
     }
-
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
