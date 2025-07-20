@@ -137,6 +137,53 @@ margin: 0;}
 
 
 
+/* -- Some Facts -- */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:124px;
+}
+.fact-card{
+    border: solid 1px #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fact-number{
+    margin: 5px 0px;
+    font-size: 2.8rem;
+    font-weight: 600px;
+}
+.fact-name{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 542px;
+    margin-bottom: 100px;
+}
+.section-title{
+    margin-bottom: 7px 0px;
+}
+
+ /* -- Our Sponspore -- */
+  .sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .sonsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+.sonsor-companies img{
+    filter: grayscale(100%);
+}
+
 
 
 
@@ -167,6 +214,15 @@ margin: 0;}
     .our-features{
         margin: 50px;
     }
+    .facts-container{
+     grid-template-columns: repeat(1, 1fr);
+    }
+    .sonsor-companies{
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+        justify-items: center;
+    }
+
 }
 
 
@@ -179,6 +235,16 @@ margin: 0;}
 
    .our-features{
         margin: 50px;
+    }
+
+    .facts-container{
+     grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sonsor-companies{
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+        justify-items: center;
     }
 
 }
