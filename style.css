@@ -252,12 +252,14 @@ margin: 0;}
     }
     .team-img-container{
         grid-template-columns: repeat(1, 1fr);
+
     }
     .our-features{
         margin: 50px;
     }
     .facts-container{
      grid-template-columns: repeat(1, 1fr);
+     justify-items: center;
     }
     .sonsor-companies{
         grid-template-columns: repeat(2, 1fr);
@@ -288,7 +290,7 @@ margin: 0;}
 @media screen and (min-width: 576px) and (max-width: 992px){
 .team{
     flex-direction: column;
-}
+    }
 
    .our-features{
         margin: 50px;
